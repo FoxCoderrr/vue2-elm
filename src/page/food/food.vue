@@ -399,12 +399,16 @@ export default {
   .showlist-enter-active,
   .showlist-leave-active {
     transition: all 0.3s;
-    transform: translateY(0);
   }
   .showlist-enter,
-  .showlist-leave-active {
+  .showlist-leave-to {
     opacity: 0;
     transform: translateY(-100%);
+  }
+  .showlist-enter-to,
+  .showlist-leave {
+    opacity: 1;
+    transform: translateY(0);
   }
   .sort_detail_type {
     width: 100%;
